@@ -591,8 +591,10 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
-
   pointer-events: none;
+}
+.is-hidden > .modal {
+  transform: rotate(180deg);
 }
 .modal {
   position: absolute;
@@ -600,7 +602,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 584px;
+  min-height: 576px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
